@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.modal_h{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.bio-preview {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.read-more-link {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.modal-content {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding: 2rem;
+}
+
+.my_box{
+  margin-top: 40px;
+}
+
+.rnd_img_main{
+  width: 8em;
+  margin-bottom: 30px;
+}
+
+.my_list_group{
+    margin-bottom: 40px;
+}
+
+body {
+    /* Existing styles */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+                url('../resouces/imgs/i.jpg') center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add this pseudo-element for overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-group-item {
+    border: 1px solid !important;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.list-group-item span {
+    padding-right: 2rem; /* Compensate for icon width */
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
