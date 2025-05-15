@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.language-selector .form-select {
+    background-color: transparent;
+    color: white;
+    border-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.language-selector .form-select:focus {
+    box-shadow: none;
+    border-color: white;
+}
+.language-selector option {
+    background-color: #212529;
+    color: white;
+}
+
 .modal_h{
   margin-top: 50px;
   margin-bottom: 20px;
